@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Customer Feedback Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+      <div class="background-image">
+        <!-- Your page content goes here -->
+    </div>
+    <div class="testbox">
+      <div class="form-class">
+        <h1>Home price prediction : </h1>
+
+        <h4>Location :<span>*</span></h4>
+        <select id="location" name="location">
+          <option value=""></option>
+
+        </select>
+        <h4>Total sqft :<span>*</span></h4>
+
+          <input  type="number" name="total_sqft" id="total_sqft" placeholder="total square feet " step="0.1" min="1000"  value="1000" required />
+
+
+        <h4>BHK :<span>*</span></h4>
+        <input type="number" name="bhk" id="bhk" value="1" min="1"  max="12"/>
+        <h4>bathroom :<span>*</span></h4>
+        <input type="number" name="bath" id="bath" value="1" min="1" max="12"/>
+
+        <div class="btn-block">
+          <button  id="predict">Predict</button>
+        </div>
+        <div id="price-block" class="price-block" style="display: none;">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
