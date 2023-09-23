@@ -44,7 +44,7 @@ if (values.location !== '') {
             //make the block visible
             block.css('display', 'block');
 
-            block.append("<button class=\"price-btn\"  id=\"price\">"+response.price+"</button>")
+            block.append("<button class=\"price-btn\"  id=\"price\"> "+response.price+" K$</button>")
         },
         error: function(xhr, status, error) {
             // Handle errors

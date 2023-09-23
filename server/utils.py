@@ -46,4 +46,5 @@ def get_estimated_price(location,sqft,bhk,bath):
     return round(__model.predict([x])[0],2)
 if __name__ == '__main__':
     load_saved_artifacts()
-    print(get_estimated_price('1st phase jp nagar',2000,4,3))
+    print(get_loc_names())
+    #print(get_estimated_price('1st phase jp nagar',2000,4,3))
